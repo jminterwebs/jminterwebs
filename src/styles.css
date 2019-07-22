@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+}
+
+.skillset {
+  display: flex;
+  flex-flow: column;
+  min-width: 200px;
+}
+
+.skills {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 300px;
+}
+
+.freebirdFormviewerViewFormCard {
+  -webkit-box-shadow: unset !important;
+  box-shadow: unset !important;
+}
+.projectHeader {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1216px) {
+  .skills {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 1015px) {
+  .skills {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .skillset {
+    min-width: 140px;
+  }
+
+  .software {
+    min-width: 160px;
+  }
+
+  img {
+    width: 160px;
+  }
+
+  .projectHeader {
+    justify-content: unset;
+  }
+}
