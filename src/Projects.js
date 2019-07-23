@@ -21,7 +21,9 @@ export default function Projects() {
             <SubLabel subLabel="NPM Page" />
           </a>
         </div>
-        <Image imageSrc={jmdesign} />
+        <a href="https://design.jminterwebs.dev/">
+          <Image imageSrc={jmdesign} />
+        </a>
       </div>
       <BodyText>
         <p>
