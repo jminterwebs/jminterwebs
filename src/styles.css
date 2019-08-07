@@ -1,67 +1,17 @@
 a {
-  text-decoration: none;
+  color: unset;
+}
+h2 {
+  text-align: center;
 }
 
-.card {
-  margin: 2em 0;
-  box-shadow: none;
-}
-.tab-body div {
-  padding: 0 1em;
-  margin-top: 1em;
-}
-.skillset {
+.header {
   display: flex;
-  flex-flow: column;
-  min-width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
 }
 
-.skills {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-evenly;
-}
-
-img {
-  width: 300px;
-}
-
-.freebirdFormviewerViewFormCard {
-  -webkit-box-shadow: unset !important;
-  box-shadow: unset !important;
-}
-.projectHeader {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
-}
-
-@media only screen and (max-width: 1216px) {
-  .skills {
-    justify-content: space-between;
-  }
-}
-
-@media only screen and (max-width: 1015px) {
-  .skills {
-    justify-content: space-evenly;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .skillset {
-    min-width: 140px;
-  }
-
-  .software {
-    min-width: 160px;
-  }
-
-  img {
-    width: 160px;
-  }
-
-  .projectHeader {
-    justify-content: unset;
-  }
+.nav-wrapper h2 {
+  padding: 0 0.5em;
 }
