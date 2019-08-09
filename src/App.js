@@ -1,6 +1,10 @@
 import React from "react";
 
-import { Avatar, Label, Heading } from "jmdesign";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {} from "@fortawesome/free-solid-svg-icons";
+import {} from "@fortawesome/free-brands-svg-icons";
+
+import { Avatar, Label, Heading, Card } from "jmdesign";
 
 import logo from "./images/jminterwebslogo.png";
 import "./styles.css";
@@ -26,7 +30,7 @@ function App() {
             />
           </a>
 
-          <a href="../public/John Verdone Resume.pdf" download>
+          <a href="John Verdone Resume.pdf" download>
             <Label
               label="Resume"
               weight="bolder"
@@ -51,6 +55,16 @@ function App() {
         color="dark"
         heading="h2"
       />
+
+      <div className="expertise">
+        <Heading text="Expertise" size="large" color="dark" heading="h2" />
+
+        <div className="card-wrapper">
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
     </div>
   );
 }
