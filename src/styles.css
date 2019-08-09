@@ -5,6 +5,10 @@ h2 {
   text-align: center;
 }
 
+body {
+  background: #e1e1e1;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -14,4 +18,48 @@ h2 {
 
 .nav-wrapper h2 {
   padding: 0 0.5em;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.card-container {
+  margin: 1em;
+  min-width: 350px;
+  max-width: 40%;
+}
+
+.multi-line-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.multi-line {
+  line-height: 1;
+}
+
+.body-text {
+  min-height: 100px;
+}
+
+.outer-tech-wrapper {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.tech-wrapper {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 130px;
+}
+
+.tech-wrapper h2 {
+  text-align: left;
+}
+
+.tech-wrapper ul.listables {
+  padding-left: 1em;
 }
