@@ -6,5 +6,13 @@
   "prettier.arrowParens": "avoid",
   "prettier.jsxBracketSameLine": true,
   "editor.fontSize": 14,
-  "window.zoomLevel": 2.5
+  "window.zoomLevel": 2.5,
+  "cSpell.words": [
+    "Linkedin",
+    "Verdone",
+    "fontawesome",
+    "fortawesome",
+    "noopener",
+    "noreferrer"
+  ]
 }

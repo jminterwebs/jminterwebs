@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   Avatar,
@@ -10,10 +10,18 @@ import {
   Wrapper
 } from "jmdesign";
 
+import Contact from "./contact";
+
 import logo from "./images/jminterwebslogo.png";
-import "./styles.css";
+import "./styles.scss";
 
 function App() {
+  const [viewState, setViewState] = useState("none");
+
+  function toggleView() {
+    setViewState(viewState === "none" ? "flex" : "none");
+  }
+
   return (
     <div className="wrapper">
       <div className="header">
@@ -25,13 +33,16 @@ function App() {
         />
 
         <div className="nav-wrapper">
-          <a href="mailto:jmverdone@gmail.com">
-            <Label
-              label="Contact"
-              weight="bolder"
-              displayStyle="inline-block"
-              labelColor="dark"
-            />
+          <a href="#">
+            <li>
+              <Label
+                label="Contact"
+                weight="bolder"
+                displayStyle="inline-block"
+                labelColor="dark"
+              />
+              <Contact display={viewState} />
+            </li>
           </a>
 
           <a href="John Verdone Resume.pdf" download>

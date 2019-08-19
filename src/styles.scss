@@ -1,12 +1,15 @@
+li {
+  list-style: none;
+}
 a {
   color: unset;
+  text-decoration: unset;
 }
 h2 {
   text-align: center;
 }
 
 body {
-  background: #e1e1e1;
 }
 
 .header {
@@ -16,8 +19,11 @@ body {
   margin-bottom: 2em;
 }
 
-.nav-wrapper h2 {
-  padding: 0 0.5em;
+.nav-wrapper {
+  display: flex;
+  h2 {
+    padding: 0 0.5em;
+  }
 }
 
 .card-wrapper {
@@ -62,4 +68,39 @@ body {
 
 .tech-wrapper ul.listables {
   padding-left: 1em;
+}
+
+.contact-me {
+  position: fixed;
+  background: white;
+  padding: 1em;
+  border-radius: 5px;
+  display: flex;
+  right: 1em;
+  margin-top: 0.5em;
+  align-items: center;
+
+  opacity: 0;
+  z-index: -99;
+  transition: all 0.75s ease-in-out;
+}
+
+.contact-section {
+  padding: 0 0.75em;
+  a {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      padding: 0 0.75em;
+    }
+  }
+}
+
+a li:hover {
+  .contact-me {
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+  }
 }
