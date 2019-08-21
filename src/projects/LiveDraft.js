@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Avatar, Wrapper, BodyText, Label, List, Card } from "jmdesign";
+import { Avatar, Wrapper, BodyText, Label, List } from "jmdesign";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faNpm } from "@fortawesome/free-brands-svg-icons";

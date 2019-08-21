@@ -1,14 +1,6 @@
 import React from "react";
 
-import {
-  Avatar,
-  Label,
-  Heading,
-  Card,
-  List,
-  BodyText,
-  Wrapper
-} from "jmdesign";
+import { Label, Heading, Card, List, BodyText, Wrapper } from "jmdesign";
 
 export default function() {
   return (
