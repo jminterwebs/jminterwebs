@@ -31,7 +31,7 @@ export default function() {
                   "React",
                   "Redux",
                   "jQuery",
-                  "Jest",
+                  "Jest";
                   " Webpack",
                   "ESLint",
                   "npm",
