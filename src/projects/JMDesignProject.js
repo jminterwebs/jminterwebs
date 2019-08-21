@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Avatar, Wrapper, BodyText, Label, List, Card } from "jmdesign";
+import { Avatar, Wrapper, BodyText, Label, List } from "jmdesign";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faNpm } from "@fortawesome/free-brands-svg-icons";
@@ -20,19 +20,22 @@ export default function JMDesignProject() {
           <a
             href="https://github.com/jminterwebs/jmdesign"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
           <a
             href="https://design.jminterwebs.dev/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGlobe} size="2x" />
           </a>
           <a
             href="https://www.npmjs.com/package/jmdesign"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faNpm} size="2x" />
           </a>
         </div>

@@ -15,7 +15,8 @@ export default function() {
               <span className="multi-line">&</span>
               <span className="multi-line">Languages</span>
             </span>
-          }>
+          }
+        >
           <BodyText>
             My main passion is front-end development. I take great care in
             focusing in on writing strong performant code that is highly
@@ -31,7 +32,7 @@ export default function() {
                   "React",
                   "Redux",
                   "jQuery",
-                  "Jest";
+                  "Jest",
                   " Webpack",
                   "ESLint",
                   "npm",
@@ -83,7 +84,8 @@ export default function() {
               <span className="multi-line">&</span>
               <span className="multi-line">Project Management</span>
             </span>
-          }>
+          }
+        >
           <BodyText>
             I spent several years as a production graphic artist. Over those
             years I developed a keen eye for design and the ability to
