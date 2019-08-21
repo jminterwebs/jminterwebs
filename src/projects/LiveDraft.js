@@ -20,20 +20,16 @@ export default function LiveDraft() {
           <a
             href="https://github.com/jminterwebs/jmdesign"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
           <a
             href="https://design.jminterwebs.dev/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGlobe} size="2x" />
-          </a>
-          <a
-            href="https://www.npmjs.com/package/jmdesign"
-            target="_blank"
-            rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faNpm} size="2x" />
           </a>
         </div>
       </Wrapper>
