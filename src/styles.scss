@@ -5,12 +5,6 @@ a {
   color: unset;
   text-decoration: unset;
 }
-h2 {
-  text-align: center;
-}
-
-body {
-}
 
 .header {
   display: flex;
@@ -77,12 +71,12 @@ body {
   border-radius: 5px;
   display: flex;
   right: 1em;
-  margin-top: 0.5em;
+
   align-items: center;
 
   opacity: 0;
   z-index: -99;
-  transition: all 0.75s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .contact-section {
@@ -102,5 +96,31 @@ a li:hover {
     opacity: 1;
     z-index: 1;
     display: flex;
+  }
+}
+
+.body-text {
+  min-height: unset;
+}
+
+.listables {
+  padding-left: 0.5em;
+}
+
+.project-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-icon-group {
+  svg {
+    padding: 0 0.5em;
   }
 }
