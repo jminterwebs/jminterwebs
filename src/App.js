@@ -1,11 +1,12 @@
-import React from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react';
 
-import { Avatar, Label } from "jmdesign";
+import { Avatar, Label } from 'jmdesign';
 
-import Contact from "./contact";
-import Projects from "./projects/Projects";
-import logo from "./images/jminterwebslogo.png";
-import "./styles.scss";
+import Contact from './contact';
+import Projects from './projects/Projects';
+import logo from './images/jminterwebslogo.png';
+import './styles.scss';
 
 function App() {
   return (
@@ -30,7 +31,6 @@ function App() {
               <Contact />
             </li>
           </a>
-
           <a href="John Verdone Resume.pdf" download>
             <Label
               label="Resume"
@@ -39,10 +39,12 @@ function App() {
               labelColor="dark"
             />
           </a>
-
-          <a href="https://github.com/jminterwebs/jmdesign" target="_blank">
+          <a
+            href="https://github.com/jminterwebs/jmdesign"
+            target="_blank"
+            rel="noopener noreferrer">
             <Label
-              label="Projects"
+              label="Github"
               weight="bolder"
               displayStyle="inline-block"
               labelColor="dark"
