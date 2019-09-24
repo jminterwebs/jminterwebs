@@ -33,11 +33,19 @@ export default function LiveDraft() {
       </Wrapper>
 
       <BodyText>
-        Currently a work in progress. Live Draft is a fantasy draft board for
-        use to use for a live drafting your league. It is best used hooked up to
-        a HD TV.
+        Proof of concept of a live fantasy Draft Board. It can be used the
+        complete a live 10 team Live fantasy Draft. Currently front end only.
       </BodyText>
       <br />
+      <Label label="To Do" />
+      <List
+        list={[
+          'Add Back-End',
+          'Allow for different sized leagues',
+          'Add full info pages for players.'
+        ]}
+      />
+
       <Label label="Tools Used" />
       <List list={['NFL Fantasy API', 'React', 'JMDesign']} />
     </Wrapper>

@@ -45,7 +45,10 @@ export default function JMDesignProject() {
         project.
       </BodyText>
       <br />
-      <Label label="Tools Used:" />
+      <Label label="To Do" />
+      <List list={['Forms', 'Buttons']} />
+
+      <Label label="Tools Used" />
       <List list={['Storybook', 'React', 'Sass']} />
     </Wrapper>
   );
