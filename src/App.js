@@ -40,7 +40,7 @@ function App() {
             />
           </a>
           <a
-            href="https://github.com/jminterwebs/jmdesign"
+            href="https://github.com/jminterwebs/"
             target="_blank"
             rel="noopener noreferrer">
             <Label
