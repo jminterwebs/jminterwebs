@@ -1,14 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useState } from 'react';
 
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaRegCheckCircle } from 'react-icons/fa';
 import { MdEmail, MdAccountCircle } from 'react-icons/md';
-import { Card, Thumbnail, Title, Label } from 'jmdesign';
+import { Card, Thumbnail, Title, Label, CalloutBanner } from 'jmdesign';
 
 import logo from './images/jminterwebslogo.png';
 import './styles.scss';
 
 function App() {
+  const [toggleClass, setToggleClass] = useState(false);
+
   const copyText = text => {
     const dummy = document.createElement('textarea');
     document.body.appendChild(dummy);
@@ -16,7 +18,22 @@ function App() {
     dummy.select();
     document.execCommand('copy');
     document.body.removeChild(dummy);
+
+    setToggleClass(!toggleClass);
+
+    setTimeout(() => {
+      setToggleClass(toggleClass);
+    }, 3000);
   };
+
+  const toggleHide = toggleClass ? 'show-banner' : 'hide-banner';
+
+  const copiedEmail = (
+    <>
+      <FaRegCheckCircle /> Email Copied
+    </>
+  );
+
   return (
     <div className="wrapper">
       <Card customClass="avatar-card">
@@ -37,10 +54,14 @@ function App() {
             <FaLinkedinIn />
           </a>
           <a
+            className="desktop-link"
             onClick={() => copyText('jmverdone@gmail.com')}
             onKeyDown={() => copyText('jmverdone@gmail.com')}
             tabIndex={0}
             role="button">
+            <MdEmail />
+          </a>
+          <a className="mobile-link" href="mailto:jmverdone@gmail.com">
             <MdEmail />
           </a>
           <a href="../public/John Verdone Resume.pdf" download>
@@ -48,6 +69,9 @@ function App() {
           </a>
         </span>
       </Card>
+      <div className={`${toggleHide} emailBanner `}>
+        <CalloutBanner bodyText={copiedEmail} type="info" />
+      </div>
     </div>
   );
 }
