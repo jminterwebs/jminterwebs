@@ -1,126 +1,34 @@
-li {
-  list-style: none;
-}
-a {
-  color: unset;
-  text-decoration: unset;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2em;
+body {
+  background-image: url('./images/Lighthouse.jpg');
+  background-size: cover;
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
 }
 
-.nav-wrapper {
-  display: flex;
-  h2 {
-    padding: 0 0.5em;
-  }
-}
-
-.card-wrapper {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.card-container {
-  margin: 1em;
-  min-width: 350px;
-  max-width: 40%;
-}
-
-.multi-line-container {
+.avatar-card {
   display: flex;
   flex-flow: column;
-}
-
-.multi-line {
-  line-height: 1;
-}
-
-.body-text {
-  min-height: 100px;
-}
-
-.outer-tech-wrapper {
-  display: flex;
-  flex-flow: wrap;
-}
-
-.tech-wrapper {
-  flex-basis: 0;
-  flex-grow: 1;
-  min-width: 130px;
-}
-
-.tech-wrapper h2 {
-  text-align: left;
-}
-
-.tech-wrapper ul.listables {
-  padding-left: 1em;
-}
-
-.contact-me {
-  position: fixed;
-  background: white;
-  padding: 1em;
-  border-radius: 5px;
-  display: flex;
-  right: 1em;
-
   align-items: center;
+  padding: 2em 4em;
 
-  opacity: 0;
-  z-index: -99;
-  transition: all 0.25s ease-in-out;
-}
-
-.contact-section {
-  padding: 0 0.75em;
-  a {
+  img {
+    margin: 1em 0;
+  }
+  span {
     display: flex;
-    align-items: center;
+    width: 100%;
+    margin-top: 0.75em;
+    font-size: 1.75em;
+    justify-content: space-between;
 
-    h3 {
-      padding: 0 0.75em;
+    a:visited {
+      color: black;
     }
-  }
-}
 
-a li:hover {
-  .contact-me {
-    opacity: 1;
-    z-index: 1;
-    display: flex;
-  }
-}
-
-.body-text {
-  min-height: unset;
-}
-
-.listables {
-  padding-left: 0.5em;
-}
-
-.project-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-.project-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.project-icon-group {
-  svg {
-    padding: 0 0.5em;
+    a:hover {
+      color: #724d56;
+    }
   }
 }
