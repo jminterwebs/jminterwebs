@@ -9,6 +9,14 @@ import logo from './images/jminterwebslogo.png';
 import './styles.scss';
 
 function App() {
+  const copyText = text => {
+    const dummy = document.createElement('textarea');
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+  };
   return (
     <div className="wrapper">
       <Card customClass="avatar-card">
@@ -16,16 +24,26 @@ function App() {
         <Thumbnail imageSrc={logo} rounded size="large" />
         <Label type="dark" label="Full Stack Web Developer" />
         <span>
-          <a href="http://github.com/jminterwebs">
+          <a
+            href="http://github.com/jminterwebs"
+            target="_blank"
+            rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/jmverdone/">
+          <a
+            href="https://www.linkedin.com/in/jmverdone/"
+            target="_blank"
+            rel="noopener noreferrer">
             <FaLinkedinIn />
           </a>
-          <a mailto="jmverdone@gmail.com">
+          <a
+            onClick={() => copyText('jmverdone@gmail.com')}
+            onKeyDown={() => copyText('jmverdone@gmail.com')}
+            tabIndex={0}
+            role="button">
             <MdEmail />
           </a>
-          <a href="../public/John Verdone Resume.pdf">
+          <a href="../public/John Verdone Resume.pdf" download>
             <MdAccountCircle />
           </a>
         </span>
