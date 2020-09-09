@@ -1,13 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import JMDesignProject from "./JMDesignProject";
-import LiveDraft from "./LiveDraft";
+import { Heading } from 'jmdesign';
 
 export default function Projects() {
+  const styles = {
+    textAlign: 'center'
+  };
+
   return (
-    <div>
-      <JMDesignProject />
-      <LiveDraft />
+    <div style={styles}>
+      <Heading
+        color="dark"
+        heading="h1"
+        size="large"
+        text="Under Going Updates"
+      />
     </div>
   );
 }

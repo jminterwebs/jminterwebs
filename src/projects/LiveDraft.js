@@ -32,6 +32,7 @@ export default function LiveDraft() {
         </div>
       </Wrapper>
 
+      <Label label="The NFL has since changed their API breaking this app. Hope to have it up and running again soon." />
       <BodyText>
         Proof of concept of a live fantasy Draft Board. It can be used the
         complete a live 10 team Live fantasy Draft. Currently front end only.
