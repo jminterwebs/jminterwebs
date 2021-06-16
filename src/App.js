@@ -64,7 +64,7 @@ function App() {
           <a className="mobile-link" href="mailto:jmverdone@gmail.com">
             <MdEmail />
           </a>
-          <a href="../public/JohnVerdoneResume.pdf" download>
+          <a href="JohnVerdoneResume.pdf" download>
             <MdAccountCircle />
           </a>
         </span>
